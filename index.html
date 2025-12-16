@@ -790,7 +790,7 @@
                 <h2>Dr Elhamaoui Hanane</h2>
                 <p>Spécialiste en Radiologie Médicale</p>
                     <div class="button-group">
-                        <a href="#" id="downloadVCard" class="futuristic-button">
+                        <a href="#" id="downloadVCard" class="futuristic-button" onclick="downloadVCard(); return false;">
                     <i class="fas fa-address-card"></i> Ajouter aux Contacts
                 </a>
                     </div>
@@ -817,40 +817,40 @@
             <div class="features-container">
                 
         <div class="feature">
-             <i class="fas fa-x-ray"></i>
-             <h3>Radiologie Diagnostique</h3>
-             <p>Radiographie standard X-Ray des os, poumons et poitrine pour le diagnostic des fractures, infections et pathologies pulmonaires. Images haute qualité pour un diagnostic précis et rapide.</p>
-         </div>
-         <div class="feature">
-             <i class="fas fa-wave-square"></i>
-             <h3>Échographie</h3>
-             <p>Échographie abdominale, pelvienne, thyroïdienne et des parties molles. Examen non invasif utilisant les ultrasons pour l’exploration en temps réel, idéal pour le suivi de grossesse et la détection précoce de pathologies.</p>
-         </div>
-         <div class="feature">
-             <i class="fas fa-radiation"></i>
-             <h3>Tomodensitométrie</h3>
-             <p>Scanner CT pour l’imagerie en coupe des organes, vaisseaux sanguins et structures osseuses. Images 3D détaillées pour le diagnostic des traumatismes, cancers et maladies vasculaires.</p>
-         </div>
-         <div class="feature">
-             <i class="fas fa-brain"></i>
-             <h3>Imagerie par Résonance Magnétique (IRM)</h3>
-             <p>IRM du cerveau, de la colonne vertébrale, des articulations et des tissus mous. Imagerie avancée haute résolution sans radiation ionisante pour les pathologies complexes.</p>
-         </div>
-         <div class="feature">
-             <i class="fas fa-ribbon"></i>
-             <h3>Imagerie de la Femme & Pathologies du Sein</h3>
-             <p>Mammographie, échographie mammaire et IRM du sein pour le dépistage, le diagnostic précoce du cancer du sein et le suivi personnalisé des patientes.</p>
-         </div>
-         <div class="feature">
-             <i class="fas fa-procedures"></i>
-             <h3>Radiologie Interventionnelle</h3>
-             <p>Actes mini-invasifs guidés par l’imagerie : biopsies, drainages, embolisations et procédures thérapeutiques réalisées avec précision et sécurité.</p>
-         </div>
-         <div class="feature">
-             <i class="fas fa-tooth"></i>
-             <h3>Radiologie Dentaire</h3>
-             <p>Examens dentaires spécialisés incluant panoramique dentaire et CBCT. Imagerie 3D précise pour implants, orthodontie et pathologies maxillo-faciales.</p>
-         </div>
+            <i class="fas fa-x-ray"></i>
+            <h3>Radiologie Diagnostique</h3>
+            <p>Radiographie standard X-Ray des os, poumons et poitrine pour le diagnostic des fractures, infections et pathologies pulmonaires. Images haute qualité pour un diagnostic précis et rapide.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-wave-square"></i>
+            <h3>Échographie</h3>
+            <p>Échographie abdominale, pelvienne, thyroïdienne et des parties molles. Examen non invasif utilisant les ultrasons pour l’exploration en temps réel, idéal pour le suivi de grossesse et la détection précoce de pathologies.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-radiation"></i>
+            <h3>Tomodensitométrie</h3>
+            <p>Scanner CT pour l’imagerie en coupe des organes, vaisseaux sanguins et structures osseuses. Images 3D détaillées pour le diagnostic des traumatismes, cancers et maladies vasculaires.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-brain"></i>
+            <h3>Imagerie par Résonance Magnétique (IRM)</h3>
+            <p>IRM du cerveau, de la colonne vertébrale, des articulations et des tissus mous. Imagerie avancée haute résolution sans radiation ionisante pour les pathologies complexes.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-ribbon"></i>
+            <h3>Imagerie de la Femme & Pathologies du Sein</h3>
+            <p>Mammographie, échographie mammaire et IRM du sein pour le dépistage, le diagnostic précoce du cancer du sein et le suivi personnalisé des patientes.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-procedures"></i>
+            <h3>Radiologie Interventionnelle</h3>
+            <p>Actes mini-invasifs guidés par l’imagerie : biopsies, drainages, embolisations et procédures thérapeutiques réalisées avec précision et sécurité.</p>
+        </div>
+        <div class="feature">
+            <i class="as fa-tooth"></i>
+            <h3>Radiologie Dentaire</h3>
+            <p>Examens dentaires spécialisés incluant panoramique dentaire et CBCT. Imagerie 3D précise pour implants, orthodontie et pathologies maxillo-faciales.</p>
+        </div>
             </div>
         </div>
     </section>
@@ -898,7 +898,6 @@ Sidi Othmane Casablanca Maroc
 
     <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
     <script>
-        console.log('Script loaded');
         document.addEventListener('DOMContentLoaded', function() {
             // Particle animation
             // ... existing code ...
@@ -937,7 +936,6 @@ Sidi Othmane Casablanca Maroc
         
         // Function to download vCard directly from the template
         function downloadVCard() {
-            console.log('downloadVCard called');
             try {
                 // Try parent method first (when in editor)
                 if (window.parent && window.parent.downloadVCardFromEditor) {
@@ -946,10 +944,11 @@ Sidi Othmane Casablanca Maroc
                 }
                 
                 // Fallback direct implementation for standalone use
-                const contactName = "a";
+                const contactName = "";
                 const contactPhone = "";
                 const contactEmail = "Hanane.Elhammaoui@gmail.com";
-                const contactAddress = "Avenue 10 Mars Salama 3\nSidi Othmane Casablanca Maroc";
+                const contactAddress = "Avenue 10 Mars Salama 3
+Sidi Othmane Casablanca Maroc";
                 const contactWebsite = "www.radiologiesidiothmane.com";
                 const organization = "Dr Elhamaoui Hanane";
                 
@@ -1029,11 +1028,6 @@ Sidi Othmane Casablanca Maroc
                 alert('Could not download contact. Please try again or contact the site owner.');
             }
         }
-        console.log('downloadVCard function defined');
-        document.getElementById('downloadVCard').addEventListener('click', function(e) {
-            e.preventDefault();
-            downloadVCard();
-        });
     </script>
 </body>
 </html>
